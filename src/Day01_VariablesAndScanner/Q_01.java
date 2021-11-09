@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Q_01 {
 
 	public static void main(String[] args) {
+		//githubta kodlarimi okurken bir yorum yazmak istedim, yorumum cok guzel oldugu icin localime de kaydetmek istedim.
+		System.out.println("Githubimda kodalrimi okurken java kodu ekledim");
 		
 		// verilen 12345 sayisinin rakam degerlerini yukaridan asagiya dogru yazdiriniz
 		// write a java program to break an integer into a sequence of invidual digits

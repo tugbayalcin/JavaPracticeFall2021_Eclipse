@@ -34,5 +34,9 @@ public class Q03 {
         soyadIlkHarf = adAd2Soyad.charAt(sonBoslukIndex + 1);
         /*****************************************************/
         System.out.println(adIlkHarf + "." + ad2IlkHarf + "." + soyadIlkHarf + ".");     //A.E.Y.
+        
+        System.out.println(oku);
+        
+        
     }
 }

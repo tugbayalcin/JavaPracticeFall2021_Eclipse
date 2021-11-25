@@ -14,7 +14,11 @@ public class Q12 {
         Kareler toplamı=30
      */
 
-
+    	Scanner scan = new Scanner(System.in);
+    	
+    	
+    	
+    	scan.close();
         
     }
 }

@@ -28,7 +28,8 @@ public class Q10 {
     Yanlis karakter girdiniz!
 
      */
-    public static void main(String[] args) {
+    @SuppressWarnings({ "resource", "unused" })
+	public static void main(String[] args) {
 
        Scanner scan = new Scanner(System.in);
        
@@ -61,6 +62,8 @@ public class Q10 {
      
        */ // ascii ile yap !! hoca yapamadi
      
+       
+       scan.close();
        
     }
 }

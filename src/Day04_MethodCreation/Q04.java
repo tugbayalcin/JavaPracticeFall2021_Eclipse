@@ -13,6 +13,12 @@ public class Q04 {
          * x.yz   ==   false
          * xyaz   ==   false
          */
+    	
+    	Scanner scan = new Scanner(System.in);
+    	
+    	
+    	
+    	scan.close();
 
     }
 

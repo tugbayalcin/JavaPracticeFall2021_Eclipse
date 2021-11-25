@@ -19,5 +19,8 @@ public class Q02 {
 
         System.out.println("ad = " + ad);       //ad = kader
         System.out.println("Soyad = " + Soyad); //Soyad = Esen
+        
+        
+        System.out.println(oku);
     }
 }

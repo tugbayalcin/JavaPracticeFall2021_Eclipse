@@ -12,6 +12,18 @@ public class Q08 {
     İnput : Allah Javacı arkadaşlara  zihin açıklığı versin
     Output : versin açıklığı zihin arkadaşlara Javacı Allah
      */
+	
+	public static void main(String[] args) { 
+		
+		
+		Scanner scan = new Scanner(System.in);
+		    	
+		    	
+		    	
+		    	scan.close();
+				
+				
+			}
 
    
 }

@@ -32,6 +32,18 @@ public class Q10 {
         Sonuç= false
         45, 3ün üssü (kuvveti) değildir.
      */
+	
+	public static void main(String[] args) { 
+		
+		
+		Scanner scan = new Scanner(System.in);
+		    	
+		    	
+		    	
+		    	scan.close();
+				
+				
+			}
 
     
 }

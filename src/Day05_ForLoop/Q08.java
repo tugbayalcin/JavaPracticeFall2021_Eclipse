@@ -7,7 +7,12 @@ public class Q08 {
         // Kullanicidan bir String isteyin. Kullanicinin girdigi
         // String’in palindrome olup olmadigini kontrol eden bir program yazin.
 
-        
+    	
+		Scanner scan = new Scanner(System.in);
+		    	
+		    	
+		    	
+		    	scan.close();
 
     }
 

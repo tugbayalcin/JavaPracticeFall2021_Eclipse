@@ -30,6 +30,12 @@ public class Q11 {
     	
     	
     	
+    	 System.out.println(gun);
+    	 System.out.println(ay);
+    	 System.out.println(yil);
+    	
+    	
+    	
     	scan.close();
     	
    

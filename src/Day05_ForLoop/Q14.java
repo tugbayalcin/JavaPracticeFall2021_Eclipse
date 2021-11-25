@@ -33,6 +33,10 @@ public class Q14 {
              */
 
         
-        
+    	Scanner scan = new Scanner(System.in);
+    	
+    	
+    	
+    	scan.close();
     }
 }

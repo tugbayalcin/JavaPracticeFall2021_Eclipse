@@ -13,6 +13,18 @@ public class Q07 {
         Print: .muroyiveS ıy'avaJ
          */
 
+	public static void main(String[] args) { 
+		
+		
+Scanner scan = new Scanner(System.in);
+    	
+    	
+    	
+    	scan.close();
+		
+		
+	}
+	
    
 }
 

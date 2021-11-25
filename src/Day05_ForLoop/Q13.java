@@ -20,7 +20,11 @@ public class Q13 {
          */
 
 		
-		
+		Scanner scan = new Scanner(System.in);
+    	
+    	
+    	
+    	scan.close();
 		
 		
 		

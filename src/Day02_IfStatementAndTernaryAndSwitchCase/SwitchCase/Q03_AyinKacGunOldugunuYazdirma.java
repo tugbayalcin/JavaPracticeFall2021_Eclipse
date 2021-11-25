@@ -55,7 +55,7 @@ public class Q03_AyinKacGunOldugunuYazdirma {
     			System.out.println("Lutfen gecerli bir ay numarasi giriniz: ");		
     	}
     	
-    	// ikinci yol 
+    	// ikinci yol -------------------------------------------------------------------------
     	switch (ay) 
     	{
     		case 1:
@@ -65,20 +65,33 @@ public class Q03_AyinKacGunOldugunuYazdirma {
     		case 8:
     		case 10:
     		case 12:
-    			System.out.println("Bu ay 31 gundur.");
+    			System.out.println("Girilen ay 31 gundur.");
     			break;
     		case 4:
     		case 6:
     		case 9:
     		case 11:
-    			System.out.println("Bu ay 30 gundur.");
+    			System.out.println("Girilen ay 30 gundur.");
     			break;
     		case 2:
-    			System.out.println("Bu ay bazi yillar 28 bazi yillar 29 gundur.");
+    			System.out.println("Lutfen Yili Giriniz:");
+    			int yil = scan.nextInt();
+    			if(yil%4==0) 
+    			{
+    				System.out.println("Girilen Ay 29 Gundur.");
+    			}
+    			else 
+    			{
+    				System.out.println("Girilen Ay 28 Gundur.");
+    			}
     			break;
     		default:
-    			System.out.println("Lutfen gecerli bir ay numarasi giriniz: ");		
+    			System.out.println("Lutfen gecerli bir ay numarasi giriniz: ");	
+    			break;
     	}
+    	
+    	
+    	
     	scan.close();
        
     }

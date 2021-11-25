@@ -19,7 +19,11 @@ public class Ter02 {
     	System.out.println("Lutfen bir harf giriniz: ");
 		char harf = scan.next().charAt(0);
 		
-		String sonuc = ((harf >= 65 && harf <= 90) || (harf >=97 && harf <= 122))?((harf >=97 && harf <= 122)?("Kucuk Harf"):("Buyuk Harf")):("Harf Degil");
+		//Ternary'de icice mantigi ile kod yazmissan, koudu okurken en icten disa dogru git
+		String sonuc = ((harf >= 65 && harf <= 90) || (harf >=97 && harf <= 122)) ? 
+							((harf >=97 && harf <= 122) ?   
+							("Kucuk Harf"):("Buyuk Harf")): 
+					  ("Harf Degil");
     	System.out.println(sonuc);
     	scan.close();
 

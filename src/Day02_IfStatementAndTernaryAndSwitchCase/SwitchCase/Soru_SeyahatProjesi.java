@@ -24,7 +24,7 @@ public class Soru_SeyahatProjesi {
          Köln : 80 KM         
         (20 KM başına 5 euro bilet parası alınmaktadir..)    yazısı gelsin.
 
-    	1.Frankfurt veya Köln olarak bir giriş yapın. 
+    	1.	Frankfurt veya Köln olarak bir giriş yapın. 
     	(Girdiğiniz sehrin harfleri , girildikten sonra büyük hale gelsin.
 
    		todo    Frankfurt girildiyse,
@@ -66,6 +66,96 @@ public class Soru_SeyahatProjesi {
          */
     	
     	Scanner scan = new Scanner(System.in);
+    	System.out.println("Lutfen Nereye Yolculuk Etmek Istediginizi Giriniz: "
+    			+ "\nFrankfurt : 60 KM "
+    			+ "\nKöln : 80 KM "
+    			+ "\n(Ucret Tarifesi: Her 20 KM Basina 5 Euro'dur)");
+    	
+    	String rota =scan.next().toUpperCase();
+    	int ucret =0;
+    	int toplamUcret =0;
+    	
+    	System.out.println("Lutfen Bakiyenizi Giriniz:");
+    	double bakiye = scan.nextDouble();
+    	System.out.println("Toplam Bakiyeniz="+bakiye);
+    	
+    	switch(rota) 
+    	{
+	    	case "FRANKFURT":
+	    		System.out.println("Rota Olusturuluyor.. Yon --> Frankfurt");
+	    		ucret=(60/20)*5;
+	    		System.out.println("Frankfurt Icin Bilet Ucreti: " + ucret + " Euro");
+	    		break;
+	    	case "KOLN":
+	    		System.out.println("Rota Olusturuluyor.. Yon --> Köln");
+	    		ucret=(80/20)*5;
+	    		System.out.println("Köln Icin Bilet Ucreti: " + ucret + " Euro");
+	    		break;
+    		default:
+    			System.out.println("Lutfen Gecerli Bir Secim Giriniz: ");
+    	}
+    	
+    	System.out.println("Lutfen Kac Kisilik Bilet Istediginizi Giriniz: "
+    			+ "\n(Max 2 Kisilik Alabilirsiniz)");
+    	int biletSayisi = scan.nextInt();
+    	
+    	switch(biletSayisi) 
+    	{
+	    	case 1:
+	    		System.out.println("1 Kisilik ");
+	    		toplamUcret = ucret;
+	    		break;
+	    	case 2:
+	    		System.out.println("2 Kisilik ");
+	    		toplamUcret = ucret*2; 
+	    		break;	
+	    	default:
+				System.out.println("Lutfen Gecerli Bir Secim Giriniz: ");
+    	}
+    	
+    	
+    	
+    	System.out.println("Tarifeniz: " + rota + " " + biletSayisi + " Kisilik");
+    	System.out.println("Fatura Tutariniz: " + toplamUcret);
+    	
+    	System.out.println("Lutfen vereceginiz tutari giriniz");
+    	Double verilenPara=scan.nextDouble();
+    	
+    	if(toplamUcret<=bakiye)
+    	{
+    	
+	    	boolean bakiyeAsilmadi=true;
+	    	while(bakiyeAsilmadi) 
+	    	{
+		    	
+		    	if(verilenPara<=bakiye && verilenPara>=toplamUcret)
+		    	{
+		    		System.out.println("Verilen Para Tutari="+verilenPara);
+					bakiyeAsilmadi=false;//dongu biter
+				}	
+		    	else if(verilenPara<=bakiye && verilenPara<toplamUcret)
+		    	{
+		    		System.out.println("Verilen Para Tutari="+verilenPara);
+		    		System.out.println("Lutfen "+(toplamUcret-verilenPara)+ "$ daha odeme yapiniz");
+		    		toplamUcret-=verilenPara;
+		    		bakiye-=verilenPara;
+		    		
+		    	}
+		    	else
+		    		System.out.println("Lutfen bakiyenizde olan paradan daha fazla para vermeyin, hesabiniz eksiye dusmez, tekrardan para veriniz");
+	    	}
+    	}
+    	else
+    		System.out.println("Bakiyenizde yeterli para bulunmadigindan bu islem gerceklestirilemez!!!");
+    			
+		
+    	double paraUstu = verilenPara-toplamUcret;
+    	System.out.println("Para Ustunuz: " + paraUstu);
+    	
+    	bakiye-=toplamUcret;
+    	System.out.println("Kalan Bakiyeniz: " + bakiye);
+
+   
     	scan.close();
 
 
